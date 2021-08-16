@@ -1,0 +1,4 @@
+function(o3df_add_executable executable_name executable_src)
+    add_executable(${executable_name} ${executable_src})
+    target_link_libraries(${executable_name} PRIVATE depthai::opencv ${OpenCV_LIBS})
+endfunction()
